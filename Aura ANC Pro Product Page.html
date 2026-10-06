@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Aura ANC Pro Wireless Headphones</title>
+<style>
+:root{box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px);
+--bg:#fafaf8;--card:#fff;--tx:#1b1f23;--mut:#5d6670;--bd:#e3e5e8;--ac:#0b5fff;--acx:#fff;--ok:#16794a;--star:#e8a100;--warn:#b4540a}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#111316;--card:#1a1d21;--tx:#eceef0;--mut:#9aa3ad;--bd:#2b3036;--ac:#5b9bff;--acx:#06101f;--ok:#4cc38a;--star:#f2b632;--warn:#f0a35e}}
+:root[data-theme="dark"]{--bg:#111316;--card:#1a1d21;--tx:#eceef0;--mut:#9aa3ad;--bd:#2b3036;--ac:#5b9bff;--acx:#06101f;--ok:#4cc38a;--star:#f2b632;--warn:#f0a35e}
+html{scroll-padding-top:env(safe-area-inset-top,0px)}
+*,*:before,*:after{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--tx);font:16px/1.55 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif}
+.wrap{max-width:1080px;margin:0 auto;padding:0 16px}
+.top{background:var(--ok);color:#fff;font-size:13px;text-align:center;padding:8px 12px}
+.crumb{font-size:13px;color:var(--mut);padding:14px 0 6px}
+.grid{display:grid;grid-template-columns:1.1fr 1fr;gap:32px;padding:8px 0 24px}
+@media(max-width:800px){.grid{grid-template-columns:1fr}}
+.stage{background:var(--card);border:1px solid var(--bd);border-radius:16px;aspect-ratio:1;display:grid;place-items:center;position:relative}
+.stage svg{width:62%}
+.thumbs{display:flex;gap:10px;margin-top:10px}
+.th{width:64px;height:64px;border:2px solid var(--bd);border-radius:10px;background:var(--card);cursor:pointer;display:grid;place-items:center;font-size:11px;color:var(--mut)}
+.th.on{border-color:var(--ac);color:var(--tx)}
+.badge{position:absolute;top:12px;left:12px;background:var(--warn);color:#fff;font-size:12px;padding:3px 10px;border-radius:99px}
+h1{font-size:26px;line-height:1.25;margin:0 0 6px}
+.brand{color:var(--ac);font-size:14px;text-decoration:none}
+.rate{display:flex;align-items:center;gap:8px;font-size:14px;color:var(--mut);margin:8px 0}
+.stars{color:var(--star);letter-spacing:2px}
+.price{display:flex;align-items:baseline;gap:10px;margin:12px 0 2px}
+.price b{font-size:32px}.price s{color:var(--mut)}.price span{color:var(--ok);font-weight:600;font-size:14px}
+.note{font-size:13px;color:var(--mut);margin:0 0 14px}
+.lbl{font-size:14px;font-weight:600;margin:14px 0 6px}
+.sw{display:flex;gap:10px}
+.sw button{width:36px;height:36px;border-radius:50%;border:2px solid var(--bd);cursor:pointer;padding:0}
+.sw button.on{outline:2px solid var(--ac);outline-offset:2px}
+.row{display:flex;gap:10px;margin-top:16px}
+.qty{display:flex;border:1px solid var(--bd);border-radius:10px;background:var(--card);align-items:center}
+.qty button{width:38px;height:44px;background:none;border:0;color:var(--tx);font-size:18px;cursor:pointer}
+.qty span{min-width:26px;text-align:center}
+.btn{flex:1;height:46px;border:0;border-radius:10px;background:var(--ac);color:var(--acx);font-size:16px;font-weight:600;cursor:pointer}
+.btn.alt{background:var(--card);color:var(--tx);border:1px solid var(--bd);margin-top:10px;width:100%}
+.stock{color:var(--ok);font-size:14px;font-weight:600;margin-top:12px}
+.box{background:var(--card);border:1px solid var(--bd);border-radius:12px;padding:14px 16px;margin-top:14px;font-size:14px}
+.box div{display:flex;gap:10px;padding:5px 0}
+.box i{font-style:normal;width:22px}
+.pay{display:flex;gap:8px;flex-wrap:wrap;margin-top:10px}
+.pay span{border:1px solid var(--bd);background:var(--card);border-radius:6px;padding:3px 10px;font-size:12px;color:var(--mut)}
+.trust{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;padding:20px 0;border-top:1px solid var(--bd);border-bottom:1px solid var(--bd)}
+@media(max-width:700px){.trust{grid-template-columns:repeat(2,1fr)}}
+.trust div{font-size:13px;color:var(--mut)}.trust b{display:block;color:var(--tx);font-size:14px}
+section{padding:28px 0}
+h2{font-size:21px;margin:0 0 14px}
+.tabs{display:flex;gap:6px;border-bottom:1px solid var(--bd);overflow-x:auto}
+.tabs button{background:none;border:0;border-bottom:2px solid transparent;padding:10px 14px;color:var(--mut);font-size:15px;cursor:pointer;white-space:nowrap}
+.tabs button.on{color:var(--tx);border-color:var(--ac);font-weight:600}
+.pane{display:none;padding-top:16px}.pane.on{display:block}
+.pane ul{padding-left:20px;margin:0}
+.tbl{overflow-x:auto}
+table{width:100%;border-collapse:collapse;font-size:14px}
+td{padding:9px 10px;border-bottom:1px solid var(--bd)}td:first-child{color:var(--mut);width:38%}
+.rv{display:grid;grid-template-columns:240px 1fr;gap:28px}
+@media(max-width:700px){.rv{grid-template-columns:1fr}}
+.big{font-size:44px;font-weight:700;line-height:1}
+.bar{display:flex;align-items:center;gap:8px;font-size:13px;color:var(--mut);margin:5px 0}
+.bar div{flex:1;height:8px;background:var(--bd);border-radius:9px;overflow:hidden}.bar i{display:block;height:100%;background:var(--star)}
+.review{background:var(--card);border:1px solid var(--bd);border-radius:12px;padding:14px 16px;margin-bottom:12px}
+.review h3{margin:2px 0 4px;font-size:15px}.review p{margin:4px 0;font-size:14px}
+.meta{font-size:12px;color:var(--mut)}.ver{color:var(--ok);font-weight:600}
+details{background:var(--card);border:1px solid var(--bd);border-radius:10px;padding:12px 16px;margin-bottom:8px}
+summary{cursor:pointer;font-weight:600}details p{margin:8px 0 0;color:var(--mut);font-size:14px}
+footer{border-top:1px solid var(--bd);padding:22px 0 90px;font-size:13px;color:var(--mut)}
+.sticky{position:fixed;left:0;right:0;bottom:0;background:var(--card);border-top:1px solid var(--bd);padding:10px 16px calc(10px + env(safe-area-inset-bottom,0px));display:none;align-items:center;gap:12px;z-index:5}
+.sticky.show{display:flex}.sticky b{flex:1}.sticky .btn{flex:0 0 150px;height:42px}
+.toast{position:fixed;top:calc(16px + env(safe-area-inset-top,0px));left:50%;transform:translateX(-50%);background:var(--ok);color:#fff;padding:10px 18px;border-radius:10px;display:none;z-index:9;font-size:14px}
+</style>
+</head>
+<body>
+<div class="top">Free shipping over $50 · 30-day free returns · 2-year warranty</div>
+<div class="wrap">
+<div class="crumb">Home › Audio › Headphones › Aura ANC Pro</div>
+<div class="grid">
+  <div>
+    <div class="stage"><span class="badge">Save 25%</span>
+      <svg id="art" viewBox="0 0 200 200" aria-label="Headphones product image"><path d="M40 120V95a60 60 0 0 1 120 0v25" fill="none" stroke="#2b2f36" stroke-width="10" stroke-linecap="round" id="band"/><rect x="26" y="108" width="34" height="58" rx="15" fill="#2b2f36" id="cl"/><rect x="140" y="108" width="34" height="58" rx="15" fill="#2b2f36" id="cr"/></svg>
+    </div>
+    <div class="thumbs"><div class="th on">Front</div><div class="th">Folded</div><div class="th">Case</div><div class="th">Size</div></div>
+    <p class="note" style="margin-top:8px">Product illustration shown. Actual finish varies slightly by screen.</p>
+  </div>
+  <div>
+    <a class="brand" href="#">Visit the Aura Audio store</a>
+    <h1>Aura ANC Pro Wireless Noise-Cancelling Headphones, 40-Hour Battery</h1>
+    <div class="rate"><span class="stars">★★★★★</span><b style="color:var(--tx)">4.6</b><a href="#reviews" style="color:var(--ac)">2,184 ratings</a> · 5,000+ sold this month</div>
+    <div class="price"><b>$149.00</b><s>$199.00</s><span>25% off</span></div>
+    <p class="note">Price includes all taxes where applicable. No hidden fees at checkout.</p>
+    <div class="lbl">Colour: <span id="cn">Graphite</span></div>
+    <div class="sw" id="sw">
+      <button class="on" style="background:#2b2f36" data-n="Graphite" aria-label="Graphite"></button>
+      <button style="background:#d9d3c7" data-n="Sand" aria-label="Sand"></button>
+      <button style="background:#2f4a7a" data-n="Midnight Blue" aria-label="Midnight Blue"></button>
+    </div>
+    <div class="row">
+      <div class="qty"><button id="m" aria-label="Decrease">−</button><span id="q">1</span><button id="p" aria-label="Increase">+</button></div>
+      <button class="btn" id="add">Add to cart</button>
+    </div>
+    <button class="btn alt">Buy now</button>
+    <div class="stock">● In stock — ships within 24 hours</div>
+    <div class="box">
+      <div><i>🚚</i><span><b>Delivery:</b> Standard 3–5 business days (free over $50). Express 1–2 days.</span></div>
+      <div><i>↩️</i><span><b>Returns:</b> 30 days, free return label, full refund.</span></div>
+      <div><i>🛡️</i><span><b>Warranty:</b> 2 years, covered by the manufacturer.</span></div>
+      <div><i>🔒</i><span><b>Secure checkout:</b> 256-bit SSL encryption. We never store card numbers.</span></div>
+    </div>
+    <div class="pay"><span>Visa</span><span>Mastercard</span><span>PayPal</span><span>Apple Pay</span><span>Cash on delivery*</span></div>
+    <p class="note" style="margin-top:6px">*Where available.</p>
+    <div class="box"><b>Sold and shipped by Aura Audio Ltd.</b><br><span class="meta">Verified seller · 98% positive over 12 months · Support replies within 4 hours</span></div>
+  </div>
+</div>
+
+<div class="trust">
+  <div><b>Verified reviews</b>Only buyers can review</div>
+  <div><b>Easy returns</b>30 days, no questions</div>
+  <div><b>Authentic product</b>Direct from brand</div>
+  <div><b>Real support</b>Chat, email, phone</div>
+</div>
+
+<section>
+  <div class="tabs" id="tabs">
+    <button class="on" data-t="d">Description</button><button data-t="s">Specifications</button><button data-t="b">In the box</button>
+  </div>
+  <div class="pane on" id="d"><ul>
+    <li><b>Adaptive noise cancellation:</b> hybrid microphones reduce up to 35 dB of ambient noise.</li>
+    <li><b>40-hour battery:</b> 30 hours with ANC on. A 10-minute charge gives about 5 hours.</li>
+    <li><b>Comfort:</b> 254 g, memory-foam ear cushions, protein-leather finish.</li>
+    <li><b>Clear calls:</b> 6-mic array with wind-noise reduction.</li>
+    <li><b>Multipoint Bluetooth 5.3:</b> connect to two devices at once.</li>
+  </ul></div>
+  <div class="pane" id="s"><div class="tbl"><table>
+    <tr><td>Driver</td><td>40 mm dynamic</td></tr><tr><td>Frequency response</td><td>20 Hz – 20 kHz</td></tr>
+    <tr><td>Bluetooth</td><td>5.3 (SBC, AAC, LDAC)</td></tr><tr><td>Battery</td><td>40 h (30 h with ANC)</td></tr>
+    <tr><td>Charging</td><td>USB-C, about 2 h full charge</td></tr><tr><td>Weight</td><td>254 g</td></tr>
+    <tr><td>Water resistance</td><td>Not rated</td></tr><tr><td>Model / SKU</td><td>AUR-ANC-P1</td></tr>
+  </table></div></div>
+  <div class="pane" id="b"><ul><li>Aura ANC Pro headphones</li><li>Hard travel case</li><li>USB-C charging cable (1 m)</li><li>3.5 mm audio cable</li><li>Quick-start guide and warranty card</li></ul></div>
+</section>
+
+<section id="reviews">
+  <h2>Customer reviews</h2>
+  <div class="rv">
+    <div>
+      <div class="big">4.6 <span class="stars" style="font-size:20px">★★★★★</span></div>
+      <p class="meta">Based on 2,184 verified ratings</p>
+      <div class="bar">5★<div><i style="width:68%"></i></div>68%</div>
+      <div class="bar">4★<div><i style="width:20%"></i></div>20%</div>
+      <div class="bar">3★<div><i style="width:7%"></i></div>7%</div>
+      <div class="bar">2★<div><i style="width:3%"></i></div>3%</div>
+      <div class="bar">1★<div><i style="width:2%"></i></div>2%</div>
+      <p class="meta">We show all reviews, including critical ones.</p>
+    </div>
+    <div>
+      <div class="review"><span class="stars">★★★★★</span><h3>Best noise cancelling at this price</h3><p>Flights and the office both got much quieter. Battery easily lasts a week of commuting.</p><div class="meta"><span class="ver">✔ Verified purchase</span> · Sara K. · Sept 2026</div></div>
+      <div class="review"><span class="stars">★★★★☆</span><h3>Great sound, slightly warm on long sessions</h3><p>Comfortable for about 3 hours, then the clamp is noticeable. Sound is balanced. The app EQ helps.</p><div class="meta"><span class="ver">✔ Verified purchase</span> · Daniel M. · Aug 2026</div></div>
+      <div class="review"><span class="stars">★★★☆☆</span><h3>Good, but the case is bulky</h3><p>Headphones are excellent. The case is large for a bag. Support replaced a faulty cable quickly.</p><div class="meta"><span class="ver">✔ Verified purchase</span> · Hina R. · Aug 2026</div></div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <h2>Questions answered</h2>
+  <details><summary>Can I return them if I don't like them?</summary><p>Yes. Returns are free within 30 days if the item is in good condition. Refunds go to your original payment method within 5–7 business days.</p></details>
+  <details><summary>Does noise cancellation work while wired?</summary><p>Yes, ANC works with the 3.5 mm cable, but the headphones must be charged.</p></details>
+  <details><summary>Are these genuine and covered by warranty?</summary><p>All units ship directly from Aura Audio Ltd. and include a 2-year manufacturer warranty covering defects.</p></details>
+  <details><summary>Is my payment information safe?</summary><p>Payments are encrypted with SSL and processed by PCI-compliant providers. We never see or store full card details.</p></details>
+</section>
+<footer>
+  <b>Aura Audio Ltd.</b> · Privacy Policy · Terms · Shipping &amp; Returns · Contact: support@example.com<br>
+  © 2026 Aura Audio Ltd. Prices and stock shown are for demonstration.
+</footer>
+</div>
+
+<div class="sticky" id="st"><b>$149.00</b><button class="btn" id="add2">Add to cart</button></div>
+<div class="toast" id="ts"></div>
+
+<script>
+var qty=1,color="Graphite",cols={"Graphite":"#2b2f36","Sand":"#d9d3c7","Midnight Blue":"#2f4a7a"};
+function $(i){return document.getElementById(i)}
+document.querySelectorAll("#sw button").forEach(function(b){b.onclick=function(){
+  document.querySelectorAll("#sw button").forEach(function(x){x.classList.remove("on")});
+  b.classList.add("on");color=b.dataset.n;$("cn").textContent=color;
+  ["band","cl","cr"].forEach(function(id){var e=$(id);if(id==="band")e.setAttribute("stroke",cols[color]);else e.setAttribute("fill",cols[color])});
+}});
+$("m").onclick=function(){if(qty>1)$("q").textContent=--qty};
+$("p").onclick=function(){if(qty<10)$("q").textContent=++qty};
+function add(){var t=$("ts");t.textContent="Added "+qty+" × Aura ANC Pro ("+color+") to cart";t.style.display="block";setTimeout(function(){t.style.display="none"},2200)}
+$("add").onclick=add;$("add2").onclick=add;
+document.querySelectorAll("#tabs button").forEach(function(b){b.onclick=function(){
+  document.querySelectorAll("#tabs button").forEach(function(x){x.classList.remove("on")});
+  document.querySelectorAll(".pane").forEach(function(x){x.classList.remove("on")});
+  b.classList.add("on");$(b.dataset.t).classList.add("on")}});
+document.querySelectorAll(".th").forEach(function(t){t.onclick=function(){document.querySelectorAll(".th").forEach(function(x){x.classList.remove("on")});t.classList.add("on")}});
+window.addEventListener("scroll",function(){$("st").classList.toggle("show",window.scrollY>520)});
+</script>
+</body>
+</html>
